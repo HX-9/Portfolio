@@ -1,0 +1,86 @@
+@keyframes gradientAnimation {
+    0% {
+        background-position: 50% 50%;
+        background-size: 100% 100%;
+      }
+      50% {
+        background-position: 0% 0%;
+        background-size: 200% 200%;
+      }
+      100% {
+        background-position: 50% 50%;
+        background-size: 100% 100%;
+      }
+  }
+
+.root {
+    --main-blue: #3a6cfa;
+}
+
+header {
+    background-color: aliceblue;
+    width: 100%;
+    position: fixed;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px 20px;
+    z-index: 999;
+}
+.logo {
+    text-decoration: none;
+    color: rgb(0, 0, 255);
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 45px;
+}
+.navigation a {
+    text-decoration: none;
+    color: blue;
+    font-weight: 500;
+    font-size: 30px;
+    padding-left: 5px;
+}
+.navigation a:hover {
+    color: rgb(162, 0, 255);
+}
+#myVideo {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    min-width: 100%;
+    min-height: 100%;
+    z-index: -1;
+  }
+.title{
+    display: flex;
+    justify-content: center;
+    font-weight: 800;
+    margin-bottom: 30px;
+    font-size: 2.2en;
+    color: #3a6cfa;
+}
+.content{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.card {
+    background-color: white;
+    width: 12.25en;
+    box-shadow: 0 5px 25px black;
+    border-radius: 10px;
+    padding: 25px;
+    margin: 15px;
+}
+.card:hover {
+    background: linear-gradient(to right, rgb(0, 0, 255), rgb(195, 0, 255));
+    animation: gradientAnimation 1s ease infinite;
+    transform: scale(1.1);
+}
+.card .icon {
+    color: #3a6cfa;
+    font-size: 8em;
+    text-align: center;
+}
